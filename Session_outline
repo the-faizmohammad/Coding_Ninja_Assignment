@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2-Hour Live Session: Zerodha Authentication</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2, h3, h4 {
+            color: #0d47a1;
+            font-weight: 600;
+        }
+        .section {
+            background: #ffffff;
+            border-left: 5px solid #0d47a1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+        .project-box {
+            background: #e8f0fe;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 5px solid #1a73e8;
+            margin: 25px 0;
+        }
+        .note {
+            background: #fff3e0;
+            border-left: 5px solid #fb8c00;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+        .time {
+            font-weight: bold;
+            color: #c62828;
+            font-size: 0.95em;
+        }
+        ul {
+            margin-top: 10px;
+        }
+        .highlight {
+            background: #fff8e1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>2-Hour Live Session Outline</h1>
+    <h2>Zerodha-Style Authentication System in Node.js</h2>
+
+    <div class="section">
+        <h3>Opening Hook (0–10 min)</h3>
+        <ul>
+            <li>Show real-world incidents: Instagram & Uber credential leaks</li>
+            <li>Explain why authentication & authorization is critical</li>
+            <li>Set up the project skeleton for Zerodha Secure Login Clone</li>
+        </ul>
+    </div>
+
+    <div class="project-box">
+        <h2>Anchor Project: Zerodha Secure Login Clone</h2>
+        <ul>
+            <li>User registration with bcrypt hashing</li>
+            <li>JWT-based login and session protection</li>
+            <li>User and Admin role separation</li>
+            <li>Protected routes with middleware</li>
+            <li>Token expiry enforcement</li>
+            <li>Rate limiting to prevent brute-force attacks</li>
+            <li>Deployment to Render/Railway</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Session Flow (120 minutes)</h3>
+
+        <h4><span class="time">10–30 min</span> — Password Security & Registration</h4>
+        <ul>
+            <li>Explain hashing, salting, and bcrypt cost factor</li>
+            <li>Implement /register route</li>
+            <li>Mini Exercise: Hash same password three times and compare outputs</li>
+        </ul>
+
+        <h4><span class="time">30–55 min</span> — JWT Authentication & Login</h4>
+        <ul>
+            <li>Create /login route issuing JWT</li>
+            <li>Show token decoding on jwt.io</li>
+            <li>Explain token expiry and refresh tokens</li>
+        </ul>
+
+        <h4><span class="time">55–75 min</span> — Role-Based Authorization</h4>
+        <ul>
+            <li>Create middleware to protect routes based on role</li>
+            <li>Implement Admin vs User dashboard</li>
+            <li>Mini Exercise: Add “Moderator” role with read-only access</li>
+        </ul>
+
+        <h4><span class="time">75–90 min</span> — Edge Case Demonstration</h4>
+        <ul>
+            <li>Break JWT payload → attempt privilege escalation</li>
+            <li>Remove expiry → show security risk</li>
+            <li>Simulate brute-force login → introduce rate limiting</li>
+        </ul>
+
+        <h4><span class="time">90–105 min</span> — Practical Challenges</h4>
+        <ul>
+            <li>Challenge 1: Email uniqueness check</li>
+            <li>Challenge 2: Protect a new /portfolio route</li>
+            <li>Challenge 3: Deploy live and share URL</li>
+        </ul>
+
+        <h4><span class="time">105–115 min</span> — Deployment & GitHub Setup</h4>
+        <ul>
+            <li>Configure environment variables</li>
+            <li>Deploy Node.js API to Render/Railway</li>
+            <li>Push project to GitHub with proper structure</li>
+        </ul>
+
+        <h4><span class="time">115–120 min</span> — Closing & Career Roadmap</h4>
+        <ul>
+            <li>Summarize authentication & authorization concepts</li>
+            <li>90-day roadmap to 15–30 LPA backend roles</li>
+            <li>Key skills: JWT, OAuth, sessions, databases, caching, deployment</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Edge Cases & Pitfalls Covered</h3>
+        <ul>
+            <li>Password stored in plaintext</li>
+            <li>JWT verification bypass</li>
+            <li>Privilege escalation via token tampering</li>
+            <li>Unlimited token lifetime</li>
+            <li>Client-side trust issues</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Student Deliverables</h3>
+        <ul>
+            <li>Fully functional Zerodha-style authentication system</li>
+            <li>Live deployed application URL</li>
+            <li>GitHub repository with documentation</li>
+            <li>Reusable authentication boilerplate</li>
+            <li>Access to community support group</li>
+        </ul>
+    </div>
+
+    <!-- Notes & Why 2 Hours Works -->
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+
+    <!-- Trainer's Note -->
+    <div style="flex: 1 1 300px; background: #e3f2fd; border-left: 5px solid #1e88e5; padding: 20px; border-radius: 8px;">
+        <h3 style="color: #1565c0;">Trainer's Note</h3>
+        <ul>
+            <li>Focus on incremental live coding to maintain learner engagement.</li>
+            <li>Pre-prepare project structure, environment variables, and GitHub repo.</li>
+            <li>Time-box exercises to ensure session fits 2 hours.</li>
+            <li>Highlight common pitfalls and edge cases for security awareness.</li>
+        </ul>
+    </div>
+
+    <!-- Learner's Note -->
+    <div style="flex: 1 1 300px; background: #fff3e0; border-left: 5px solid #fb8c00; padding: 20px; border-radius: 8px;">
+        <h3 style="color: #ef6c00;">Learner's Note</h3>
+        <ul>
+            <li>Bring your laptop with Node.js and MongoDB installed (or access to Atlas).</li>
+            <li>Be ready to type critical parts: routes, middleware, JWT usage.</li>
+            <li>Focus on understanding concepts rather than memorizing code.</li>
+            <li>Mini challenges are designed for practice, not grading.</li>
+        </ul>
+    </div>
+
+    <!-- Stakeholder Note -->
+    <div style="flex: 1 1 300px; background: #e8f5e9; border-left: 5px solid #43a047; padding: 20px; border-radius: 8px;">
+        <h3 style="color: #2e7d32;">Stakeholder Note</h3>
+        <ul>
+            <li>Session is designed to fit 2 hours with high engagement and tangible outcomes.</li>
+            <li>Deliverables include a functional Zerodha-style authentication system, live deployed URL, and reusable boilerplate.</li>
+            <li>Focus is solely on authentication & authorization to maintain scope and efficiency.</li>
+            <li>Gamified exercises ensure learning without exceeding time limit.</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Why This Session Works in 2 Hours -->
+<div style="margin-top: 40px; background: #f3e5f5; border-left: 5px solid #8e24aa; padding: 25px; border-radius: 8px;">
+    <h3 style="color: #6a1b9a;">Why This Session Works in 2 Hours</h3>
+    <ul>
+        <li><strong>Focused Scope:</strong> Reduces cognitive overload and ensures learners retain key concepts.</li>
+        <li><strong>Stepwise Incremental Implementation:</strong> Live coding + demo reinforces learning progressively.</li>
+        <li><strong>Gamified & Mini Challenges:</strong> Maintains attention and activates problem-solving skills.</li>
+        <li><strong>Live Edge-Case Demos:</strong> Memorable “shock-value” moments enhance long-term recall.</li>
+        <li><strong>Deployment Segment:</strong> Tangible outcome reinforces motivation and achievement.</li>
+    </ul>
+
+    <h4 style="color:#6a1b9a;">Cognitive Impact</h4>
+    <ul>
+        <li>Short, focused segments prevent cognitive overload.</li>
+        <li>Incremental complexity builds mental models gradually.</li>
+        <li>Gamified mini challenges and edge-case demos create active learning moments.</li>
+    </ul>
+
+    <h4 style="color:#6a1b9a;">Marketing Perspective</h4>
+    <ul>
+        <li>Compact 2-hour session appeals to professionals and students with limited time.</li>
+        <li>Deliverables provide tangible proof of skill acquisition, boosting perceived value.</li>
+        <li>Zerodha-style real-world project increases engagement and relevance.</li>
+    </ul>
+
+    <h4 style="color:#6a1b9a;">Content Engineering</h4>
+    <ul>
+        <li>Pre-prepared project structure and boilerplate optimize delivery efficiency.</li>
+        <li>Time-boxed challenges and live coding reduce cognitive load and prevent overruns.</li>
+        <li>Modular content allows reuse and adaptation for future sessions.</li>
+    </ul>
+
+    <h4 style="color:#6a1b9a;">Tips to Ensure It Fits in 2 Hours</h4>
+    <ul>
+        <li><strong>Pre-prepare the Project Structure:</strong> Node.js, Express, MongoDB, JWT library, bcrypt.</li>
+        <li><strong>Keep Challenges Small & Time-Boxed:</strong> Each ≤ 5 minutes. Show solution after few attempts.</li>
+        <li><strong>Limit Distractions:</strong> Avoid long theory digressions. Use live demos and analogies (Zerodha, Instagram, Uber).</li>
+        <li><strong>Efficient Screen Sharing:</strong> GitHub repo ready; learners type only critical parts (routes, middleware, JWT usage).</li>
+    </ul>
+</div>
+
+</body>
+</html>
