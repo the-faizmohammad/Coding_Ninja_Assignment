@@ -1,4 +1,4 @@
-# 🧩 Module 2 — What We Are Building (System Design First)
+# Module 2 — What We Are Building (System Design First)
 
 > **Mindset before code:**  
 > "If you don't know what you're building, you will secure the wrong thing."
